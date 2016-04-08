@@ -182,8 +182,7 @@ def replace_third_and_last(input_list):
 
     """
 
-    input_list[2] = 37
-    input_list[-1] = 37
+    input_list[2] , input_list[-1] = 37, 37
 
 
 def replace_middle(input_list):
@@ -217,9 +216,9 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    # is there a more elegant way todo this, other than just starting at the end?
-    del input_list[6]
-    del input_list[2]
+    # is there a more elegant way to do this, other than just starting at the end?
+    input_list[6:7] = []
+    input_list[2:3] = []
 
 
 def delete_middle(input_list):
@@ -236,7 +235,7 @@ def delete_middle(input_list):
 
     """
 
-    del input_list[2:-2]
+    input_list[2:-2] = []
 
 
 ##############################################################################
